@@ -1,0 +1,21 @@
+<script>
+    function prom(a)
+    {
+        return new Promise(function(resolve,reject){
+            if(a){
+                resolve("yes")
+            }else{
+                reject("no")
+            }
+        })
+    }
+
+    //prom(true)
+    //console.log(prom(false))
+
+prom(true).then((result)=>{
+    document.write(result)
+}).catch((error)=>{
+    console.log(error)
+})
+</script>
